@@ -32,7 +32,7 @@
   type = cat-file -t
   dump = cat-file -p
 [github]
-  user = lex-unix
+  user = Caps1d
 [core]
   pager = delta
 [interactive]

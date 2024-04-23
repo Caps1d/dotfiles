@@ -5,12 +5,20 @@ return {
     config = function()
         local kanagawa = require('kanagawa')
         local icons = require('nvim-web-devicons')
-        local BG = '#0E0F11'
-        local ALMOST_BG = '#1A1C20'
+        local BG = '#0F0F12'
+        -- local BG = '#0E0F11'
+        local ALMOST_BG = '#1D1D23'
+        -- local ALMOST_BG = '#1E2617'
+        -- local ALMOST_BG = '#1A1C20'
         local WHITE = '#9da2af'
         local GRAY = '#80838f'
-        local FADED_GRAY = '#536056'
-        local DARK_GREEN = '#647367'
+        local FADED_GRAY = '#516255'
+        -- local FADED_GRAY = '#536056'
+        local DARK_GREEN = '#5B6A56'
+        -- local DARK_GREEN = '#647367'
+        local VHIGHLIGHT = '#373140'
+        -- local VHIGHLIGHT = '#28331F'
+        -- local VHIGHLIGHT = '#3A4139'
         -- local STRONG_FADED_GRAY = '#2a2d30'
         kanagawa.setup({
             transparent = true,
@@ -33,7 +41,7 @@ return {
                 local c = colors.palette
                 local overrides = {
                     --general
-                    Visual = { bg = ALMOST_BG }, -- bg on select
+                    Visual = { bg = VHIGHLIGHT }, -- bg on select
                     ModeMsg = { fg = c.oniViolet },
                     CursorLineNr = { fg = c.oniViolet },
                     CursorLine = { bg = ALMOST_BG },
