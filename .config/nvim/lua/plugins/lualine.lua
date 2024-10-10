@@ -3,71 +3,10 @@ return {
     enabled = true,
     lazy = false,
     config = function()
-        -- custom theme
-        local colors = {
-            black = '#282828',
-            white = '#ebdbb2',
-            red = '#E45A69',
-            pink = '#D27E99',
-            green = '#98BB6C',
-            darkgreen = '#5B6A56',
-            -- darkgreen = '#546056',
-            boldgreen = '#647367',
-            seaweed = '#677F6B',
-            brine = '#94A288',
-            blue = '#80B4CA',
-            darkblue = '#7E9CD8',
-            orange = '#F99C64',
-            yellow = '#E1BE81',
-            lightyellow = '#E6C384',
-            latte = '#C0A36E',
-            gray = '#969BA8',
-            lightgray = '#2E3036',
-            -- darkgray = '#1A1C20',
-            -- darkgray = '#1A1E18',
-            -- darkgray = '#1F2617',
-            darkgray = '#1E1E23',
-            inactivegray = '#2D3141',
-            lilac = '#957FB8',
-        }
-        local kanagawa = {
-            normal = {
-                a = { bg = colors.seaweed, fg = colors.black, gui = 'bold' },
-                b = { bg = colors.lightgray, fg = colors.latte },
-                c = { bg = colors.darkgray, fg = colors.darkgreen },
-            },
-            insert = {
-                a = { bg = colors.gray, fg = colors.black, gui = 'bold' },
-                b = { bg = colors.lightgray, fg = colors.latte },
-                c = { bg = colors.darkgray, fg = colors.darkgreen },
-            },
-            visual = {
-                a = { bg = colors.lilac, fg = colors.black, gui = 'bold' },
-                b = { bg = colors.lightgray, fg = colors.latte },
-                c = { bg = colors.darkgray, fg = colors.darkgreen },
-            },
-            replace = {
-                a = { bg = colors.red, fg = colors.black, gui = 'bold' },
-                b = { bg = colors.lightgray, fg = colors.latte },
-                c = { bg = colors.darkgray, fg = colors.darkgreen },
-            },
-            command = {
-                a = { bg = colors.red, fg = colors.black, gui = 'bold' },
-                b = { bg = colors.lightgray, fg = colors.latte },
-                c = { bg = colors.darkgray, fg = colors.darkgreen },
-            },
-            inactive = {
-                a = { bg = colors.darkgray, fg = colors.gray, gui = 'bold' },
-                b = { bg = colors.darkgray, fg = colors.gray },
-                c = { bg = colors.darkgray, fg = colors.gray },
-            },
-        }
-        -- end of theme definition
-
         require('lualine').setup({
             options = {
                 icons_enabled = true,
-                theme = kanagawa,
+                theme = 'gruvbox-material',
                 section_separators = { left = '', right = '' },
                 component_separators = { left = '', right = '' },
                 disabled_filetypes = {

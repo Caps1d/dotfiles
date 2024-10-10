@@ -10,10 +10,11 @@ return {
             -- will get overriden by `get_icons` option
             default = true,
         })
+
         icons.set_icon({
-            ['.prettierignore'] = {
-                icon = '',
-                name = 'PrettierIgnore',
+            astro = {
+                icon = '',
+                name = 'astro',
             },
         })
     end,

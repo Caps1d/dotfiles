@@ -20,11 +20,42 @@
 
 # Blurred green kanagawa-like theme ----
 # git colors
+# set -g tide_git_bg_color 373941
+# set -g tide_git_bg_color_unstable 373941
+# set -g tide_git_color_branch C0A36E
+# set -g tide_git_color_conflicted e45a69
+# set -g tide_git_color_untracked C0A36E
+# set -g tide_git_color_dirty f98540
+# set -g tide_git_operation_color 957FB8
+# set -g tide_git_staged_color 8FC34E
+# set -g tide_git_color_upstream 92B468
+# set -g tide_git_stash_color 80838F
+# set -g tide_git_icon 
+# # right component bg color
+# set -g tide_pwd_bg_color 677F6B
+# # path colors in right component
+# set -g tide_pwd_color_dirs 3A3A3A
+# set -g tide_pwd_color_anchors 3A3A3A
+# # left comoponent bg color
+# set -g tide_time_bg_color 677F6B
+# set -g tide_toolbox_bg_color 373941
+# set -g tide_go_bg_color 373941
+# set -g tide_go_color 7AABC0
+# #---------------------------------------
+#
+# # tide '>' char color
+# set -g tide_character_color 5AA266
+# set -g tide_character_color_failure DE2036
+
+#---------------------------------------
+
+# GO inspired theme ----
+# git colors
 set -g tide_git_bg_color 373941
 set -g tide_git_bg_color_unstable 373941
-set -g tide_git_color_branch C0A36E
+set -g tide_git_color_branch E3BD57
 set -g tide_git_color_conflicted e45a69
-set -g tide_git_color_untracked C0A36E
+set -g tide_git_color_untracked E3BD57
 set -g tide_git_color_dirty f98540
 set -g tide_git_operation_color 957FB8
 set -g tide_git_staged_color 8FC34E
@@ -32,19 +63,19 @@ set -g tide_git_color_upstream 92B468
 set -g tide_git_stash_color 80838F
 set -g tide_git_icon 
 # right component bg color
-set -g tide_pwd_bg_color 677F6B
-# path colors in right component
-set -g tide_pwd_color_dirs 3A3A3A
-set -g tide_pwd_color_anchors 3A3A3A
-# left comoponent bg color
-set -g tide_time_bg_color 677F6B
-set -g tide_toolbox_bg_color 373941
+set -g tide_time_bg_color 1B9BF6
 set -g tide_go_bg_color 373941
-set -g tide_go_color 7AABC0
+set -g tide_go_color 75E1FE
+# path colors in left component
+set -g tide_pwd_color_anchors EFFCFF
+set -g tide_pwd_color_dirs C2F1FF
+# left comoponent bg color
+set -g tide_pwd_bg_color 1B9BF6
+set -g tide_toolbox_bg_color 1B9BF6
 #---------------------------------------
 
 # tide '>' char color
-set -g tide_character_color 5AA266
+set -g tide_character_color 75E1FE
 set -g tide_character_color_failure DE2036
 
 

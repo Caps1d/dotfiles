@@ -17,6 +17,7 @@ return {
         local DARK_GREEN = '#5B6A56'
         -- local DARK_GREEN = '#647367'
         local VHIGHLIGHT = '#373140'
+        local TXTHIGHLIGHT = '#957FB8'
         -- local VHIGHLIGHT = '#28331F'
         -- local VHIGHLIGHT = '#3A4139'
         -- local STRONG_FADED_GRAY = '#2a2d30'
@@ -52,8 +53,8 @@ return {
                     BufferLineBackground = { bg = BG, fg = FADED_GRAY }, -- unactive tabs to faded gray
                     BufferLineSeparator = { fg = BG },
                     BufferLineModified = { fg = BG },
-                    BufferlineBufferSelected = { fg = DARK_GREEN }, -- active tabs to gray
-                    BufferlineBufferVisible = { fg = FADED_GRAY }, -- active tabs to gray
+                    BufferlineBufferSelected = { fg = TXTHIGHLIGHT }, -- active tabs to gray
+                    BufferlineBufferVisible = { fg = TXTHIGHLIGHT }, -- active tabs to gray
                     BufferLineIndicatorVisible = { fg = BG },
 
                     -- indentline

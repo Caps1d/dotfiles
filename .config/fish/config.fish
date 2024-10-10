@@ -70,3 +70,11 @@ set -q color_virtual_env_str; or set -g color_virtual_env_str black
 # tabtab source for packages
 # uninstall by removing these lines
 [ -f ~/.config/tabtab/fish/__tabtab.fish ]; and . ~/.config/tabtab/fish/__tabtab.fish; or true
+
+starship init fish | source 
+
+# Setting PATH for Python 3.12
+# The original version is saved in /Users/yegorsmertenko/.config/fish/config.fish.pysave
+set -x PATH "/Library/Frameworks/Python.framework/Versions/3.12/bin" "$PATH"
+
+source $HOME/.config/fish/local.fish

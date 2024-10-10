@@ -29,7 +29,7 @@ return {
                 'markdown_inline',
             },
             autotag = {
-                enable = false,
+                enable = true,
             },
         })
 
