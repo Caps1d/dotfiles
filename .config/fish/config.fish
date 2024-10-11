@@ -71,10 +71,18 @@ set -q color_virtual_env_str; or set -g color_virtual_env_str black
 # uninstall by removing these lines
 [ -f ~/.config/tabtab/fish/__tabtab.fish ]; and . ~/.config/tabtab/fish/__tabtab.fish; or true
 
-starship init fish | source 
-
 # Setting PATH for Python 3.12
 # The original version is saved in /Users/yegorsmertenko/.config/fish/config.fish.pysave
 set -x PATH "/Library/Frameworks/Python.framework/Versions/3.12/bin" "$PATH"
+
+# fzf
+set -g FZF_PREVIEW_FILE_CMD "bat --style=numbers --color=always --line-range :500"
+set -g FZF_LEGACY_KEYBINDINGS 0
+set -gx FZF_DEFAULT_COMMAND "fd --type d --search-path $HOME/dev --exclude .git --exclude venv --exclude '**/target' --exclude node_modules"
+fzf --fish | source
+
+# starship
+starship init fish | source 
+set -gx STARSHIP_CONFIG $HOME/.config/starship/starship.toml
 
 source $HOME/.config/fish/local.fish
