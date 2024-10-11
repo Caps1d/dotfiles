@@ -19,5 +19,6 @@ fish_*
 !.config/fish/functions/load_env.fish
 !.config/fish/functions/add_to_path.fish
 .config/fish/conf.d/*
+.config/fish/local.fish
 !.config/fish/conf.d/tide.fish
 
